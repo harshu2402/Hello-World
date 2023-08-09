@@ -23,10 +23,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
       - name: Install Python
-      run: sudo apt update
-      run: sudo apt install python3
-
+        run: sudo apt install python3
+        
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: python Hello-World.py
